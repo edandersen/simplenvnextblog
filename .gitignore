@@ -3,3 +3,4 @@ artifacts/*
 SimpleBlog/bower_components/*
 SimpleBlog/node_modules/*
 SimpleBlog/bin/*
+SimpleBlog/Properties/PublishProfiles/*

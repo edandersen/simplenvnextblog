@@ -4,6 +4,7 @@
     <TargetKREVersion>KRE-CLR-x86.1.0.0-beta2</TargetKREVersion>
     <ActiveDebugProfile>web</ActiveDebugProfile>
     <DebugCLRTypeOverride>NETCore</DebugCLRTypeOverride>
+    <NameOfLastUsedPublishProfile>simplevnextblogtest</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
