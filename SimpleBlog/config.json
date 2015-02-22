@@ -1,0 +1,12 @@
+﻿{
+    "Data": {
+        "DefaultConnection": { 
+            "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=aspnet5-SimpleBlog-be4f779f-57d6-4f34-8c8b-41b1ae34d88d;Trusted_Connection=True;MultipleActiveResultSets=true"
+        }
+    },
+    "EntityFramework": {
+        "ApplicationDbContext": {
+            "ConnectionStringKey": "Data:DefaultConnection:ConnectionString"
+        }
+    }
+}

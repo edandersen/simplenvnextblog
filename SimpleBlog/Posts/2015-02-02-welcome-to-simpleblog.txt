@@ -1,0 +1,10 @@
+﻿---
+title: Welcome to Simpleblog
+---
+This is your first Simpleblog post.
+
+Lovely!
+
+* A list
+* With some points
+* Nice one.
