@@ -42,6 +42,7 @@ namespace SimpleBlog.Services
                         var slugPortionOfName = fileName.Substring(10, fileName.Length - 10);
 
                         post.TimeStamp = DateTime.Parse(datePortionOfName);
+                        post.Slug = slugPortionOfName;
 
                         posts.Add(post);
                     }

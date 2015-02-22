@@ -19,5 +19,7 @@ namespace SimpleBlog.ViewModels
         public DateTime TimeStamp { get; set; }
 
         public string Author { get; set; }
+
+        public string Slug { get; set; }
     }
 }
