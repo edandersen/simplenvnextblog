@@ -17,7 +17,7 @@ namespace SimpleBlog.Controllers
 
         public IActionResult Index()
         {
-            return View(postService.Posts);
+            return View(postService.Posts.OrderByDescending(p => p.TimeStamp));
         }
 
         public IActionResult Error()
