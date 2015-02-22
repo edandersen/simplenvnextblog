@@ -4,3 +4,6 @@ SimpleBlog/bower_components/*
 SimpleBlog/node_modules/*
 SimpleBlog/bin/*
 SimpleBlog/Properties/PublishProfiles/*
+src/SimpleBlog/bower_components/*
+src/SimpleBlog/node_modules/*
+src/artifacts/*

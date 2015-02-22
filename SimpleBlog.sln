@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.22512.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SimpleBlog", "SimpleBlog\SimpleBlog.kproj", "{B29E72CF-CFEA-4355-8DF5-49FD86D76B3B}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SimpleBlog", "src\SimpleBlog\SimpleBlog.kproj", "{B29E72CF-CFEA-4355-8DF5-49FD86D76B3B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
