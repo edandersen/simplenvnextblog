@@ -12,7 +12,6 @@ using Microsoft.Framework.ConfigurationModel;
 using Microsoft.Framework.DependencyInjection;
 using Microsoft.Framework.Logging;
 using Microsoft.Framework.Logging.Console;
-using SimpleBlog.Models;
 using SimpleBlog.Shared;
 using SimpleBlog.Services;
 
@@ -41,6 +40,7 @@ namespace SimpleBlog
             // services.AddWebApiConventions();
 
             services.AddTransient<IPostService, StaticMarkdownPostService>();
+            services.AddTransient<IConfigService, StaticJsonConfigService>();
 
         }
 

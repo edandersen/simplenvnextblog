@@ -3,17 +3,22 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - SimpleBlog</title>
+    @{
+        var title = await Component.InvokeAsync("SiteTitle");
+    }
+    <title>@ViewBag.Title - @title</title>
 
     <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
     <div class="container body-content">
+        <h1>@title</h1>
+        <hr />
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - SimpleBlog</p>
+            <p>&copy; @DateTime.Now.Year - @title</p>
         </footer>
     </div>
     <script src="~/lib/jquery/js/jquery.js"></script> 
