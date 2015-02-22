@@ -7,3 +7,4 @@ SimpleBlog/Properties/PublishProfiles/*
 src/SimpleBlog/bower_components/*
 src/SimpleBlog/node_modules/*
 src/artifacts/*
+src/SimpleBlog/Properties/PublishProfiles/*
