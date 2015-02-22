@@ -8,6 +8,14 @@ namespace SimpleBlog.ViewModels
 
         public string Body { get; set; }
 
+        public string BodyHtml
+        {
+            get
+            {
+                return CommonMark.CommonMarkConverter.Convert(Body);
+            }
+        }
+
         public DateTime TimeStamp { get; set; }
 
         public string Author { get; set; }

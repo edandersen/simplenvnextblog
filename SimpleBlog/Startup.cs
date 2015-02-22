@@ -40,7 +40,7 @@ namespace SimpleBlog
             // You need to add Microsoft.AspNet.Mvc.WebApiCompatShim package to project.json
             // services.AddWebApiConventions();
 
-            services.AddTransient<IPostService, PostService>();
+            services.AddTransient<IPostService, StaticMarkdownPostService>();
 
         }
 
