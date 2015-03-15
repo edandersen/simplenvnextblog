@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @{
+        var title = await Component.InvokeAsync("SiteTitle");
+        var themePath = await Component.InvokeAsync("ThemeContentFolder");
+    }
+    <title>@ViewBag.Title - @title</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="@themePath/css/site.css" />
+</head>
+<body>
+    <div class="container body-content">
+        <h1>@title</h1>
+        <hr />
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - @title</p>
+        </footer>
+    </div>
+    <script src="~/lib/jquery/jquery.min.js"></script> 
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

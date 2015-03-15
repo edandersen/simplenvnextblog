@@ -1,4 +1,14 @@
 ﻿@using SimpleBlog;
 @{
-    Layout = "/Views/Shared/_Layout.cshtml";
+    var themeName = await Component.InvokeAsync("ThemeName");
+
+    if (string.IsNullOrWhiteSpace(themeName.ToString()))
+    {
+        Layout = "/Views/Shared/_Layout.cshtml";
+    }
+    else
+    {
+        Layout = "/Views/Themes/" + themeName.ToString() + "/Shared/_Layout.cshtml";
+    }
+
 }

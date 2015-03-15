@@ -1,0 +1,19 @@
+﻿@model IEnumerable<SimpleBlog.ViewModels.PostViewModel>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@foreach (var post in Model)
+{
+    <div class="row post">
+        <div class="col-lg-12">
+            <h2>@post.Title</h2>
+            <p class="post-date">
+                @post.TimeStamp.ToString("D")
+            </p>
+            <p class="post-body">
+                @Html.Raw(post.BodyHtml)
+            </p>
+        </div>
+    </div>
+}

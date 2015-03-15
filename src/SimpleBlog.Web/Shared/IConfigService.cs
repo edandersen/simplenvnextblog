@@ -6,6 +6,6 @@ namespace SimpleBlog.Shared
 {
     public interface IConfigService
     {
-        Task<ConfigViewModel> LoadConfig();
+        Task<ConfigViewModel> LoadConfigAsync();
     }
 }

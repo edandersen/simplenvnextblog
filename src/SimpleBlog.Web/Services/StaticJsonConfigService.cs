@@ -8,7 +8,7 @@ namespace SimpleBlog.Services
 {
     public class StaticJsonConfigService : IConfigService
     {
-        public async Task<ConfigViewModel> LoadConfig()
+        public async Task<ConfigViewModel> LoadConfigAsync()
         {
             using (var fileStream = System.IO.File.OpenText(System.IO.Path.Combine(AppContext.BaseDirectory + "\\Config\\config.json")))
             {

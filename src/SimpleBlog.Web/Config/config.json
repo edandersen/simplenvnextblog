@@ -1,3 +1,4 @@
 ﻿{
-	"SiteTitle" : "SimpleBlog powered by ASP.NET 5"
+	"SiteTitle": "SimpleBlog powered by ASP.NET 5",
+	"ThemeName": "Simples"
 }

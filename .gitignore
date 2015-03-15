@@ -10,3 +10,5 @@ src/artifacts/*
 src/SimpleBlog/Properties/PublishProfiles/*
 src/SimpleBlog.Web/bower_components/*
 src/SimpleBlog.Web/node_modules/*
+src/SimpleBlog.Web/bin/*
+src/SimpleBlog.Web/bin/*

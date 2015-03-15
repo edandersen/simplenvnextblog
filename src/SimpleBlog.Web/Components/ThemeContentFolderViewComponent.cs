@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 
 namespace SimpleBlog.Components
 {
-    public class SiteTitleViewComponent : ViewComponent
+    public class ThemeContentFolderViewComponent : ViewComponent
     {
         private readonly IConfigService configService;
 
-        public SiteTitleViewComponent(IConfigService configService)
+        public ThemeContentFolderViewComponent(IConfigService configService)
         {
             this.configService = configService;
         }
@@ -17,7 +17,8 @@ namespace SimpleBlog.Components
         public async Task<string> InvokeAsync()
         {
             var config = await configService.LoadConfigAsync();
-            return config.SiteTitle ?? string.Empty;
+            var themeName = config.ThemeName ?? string.Empty;
+            return "/themes/" + themeName;
         }
     }
 }
