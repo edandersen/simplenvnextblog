@@ -7,7 +7,7 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SimpleBlog.Web", "src\Simpl
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{88CB4C8F-8D9C-485B-9AE8-3CFFA46A85DD}"
 	ProjectSection(SolutionItems) = preProject
-		src\SimpleBlog.Web\global.json = src\SimpleBlog.Web\global.json
+		global.json = global.json
 	EndProjectSection
 EndProject
 Global
