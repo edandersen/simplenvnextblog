@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.22609.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SimpleBlog.Web", "src\SimpleBlog.Web\SimpleBlog.Web.kproj", "{2ACA9C5E-BC47-473B-8E44-F1E3DDC3553D}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SimpleBlog.Web", "src\SimpleBlog.Web\SimpleBlog.Web.xproj", "{2ACA9C5E-BC47-473B-8E44-F1E3DDC3553D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

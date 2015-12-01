@@ -6,12 +6,12 @@ using Microsoft.AspNet.Hosting;
 using Microsoft.AspNet.Http;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Routing;
-using Microsoft.AspNet.Security.Cookies;
+using Microsoft.AspNet.Authentication.Cookies;
 using Microsoft.Data.Entity;
-using Microsoft.Framework.ConfigurationModel;
-using Microsoft.Framework.DependencyInjection;
-using Microsoft.Framework.Logging;
-using Microsoft.Framework.Logging.Console;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Console;
 using SimpleBlog.Shared;
 using SimpleBlog.Services;
 
@@ -22,9 +22,10 @@ namespace SimpleBlog.Web
         public Startup(IHostingEnvironment env)
         {
             // Setup configuration sources.
-            Configuration = new Configuration()
+            Configuration = new ConfigurationBuilder()
                 .AddJsonFile("config.json")
-                .AddEnvironmentVariables();
+                .AddEnvironmentVariables()
+                .Build();
         }
 
         public IConfiguration Configuration { get; set; }
@@ -55,21 +56,18 @@ namespace SimpleBlog.Web
             if (string.Equals(env.EnvironmentName, "Development", StringComparison.OrdinalIgnoreCase))
             {
                 app.UseBrowserLink();
-                app.UseErrorPage(ErrorPageOptions.ShowAll);
-                app.UseDatabaseErrorPage(DatabaseErrorPageOptions.ShowAll);
+                app.UseDeveloperExceptionPage();
+                app.UseDatabaseErrorPage();
             }
             else
             {
                 // Add Error handling middleware which catches all application specific errors and
                 // send the request to the following path or controller action.
-                app.UseErrorHandler("/Home/Error");
+                app.UseExceptionHandler("/Home/Error");
             }
 
             // Add static files to the request pipeline.
             app.UseStaticFiles();
-
-            // Add cookie-based authentication to the request pipeline.
-            app.UseIdentity();
 
             // Add MVC to the request pipeline.
             app.UseMvc(routes =>

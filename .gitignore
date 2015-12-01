@@ -12,3 +12,5 @@ src/SimpleBlog.Web/bower_components/*
 src/SimpleBlog.Web/node_modules/*
 src/SimpleBlog.Web/bin/*
 src/SimpleBlog.Web/bin/*
+src/SimpleBlog.Web/project.lock.json
+src/*/*.user
