@@ -81,5 +81,7 @@ namespace SimpleBlog.Web
                 // routes.MapWebApiRoute("DefaultApi", "api/{controller}/{id?}");
             });
         }
+
+        public static void Main(string[] args) => WebApplication.Run<Startup>(args);
     }
 }
