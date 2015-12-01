@@ -48,6 +48,9 @@ namespace SimpleBlog.Web
         // Configure is called after ConfigureServices is called.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerfactory)
         {
+
+            app.UseIISPlatformHandler(options => options.AuthenticationDescriptions.Clear());
+
             // Configure the HTTP request pipeline.
             // Add the console logger.
             loggerfactory.AddConsole();
@@ -65,8 +68,6 @@ namespace SimpleBlog.Web
                 // send the request to the following path or controller action.
                 app.UseExceptionHandler("/Home/Error");
             }
-
-            app.UseIISPlatformHandler(options => options.AuthenticationDescriptions.Clear());
 
             app.UseStaticFiles();
 
