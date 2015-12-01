@@ -2,7 +2,7 @@
   "webroot": "wwwroot",
   "version": "1.0.0-*",
   "sdk": {
-    "version": "1.0.0-rc1-update1"
+    "version": "1.0.0-rc1-final"
   },
   "dependencies": {
     "EntityFramework.MicrosoftSqlServer": "7.0.0-rc1-final",
