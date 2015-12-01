@@ -66,7 +66,8 @@ namespace SimpleBlog.Web
                 app.UseExceptionHandler("/Home/Error");
             }
 
-            // Add static files to the request pipeline.
+            app.UseIISPlatformHandler(options => options.AuthenticationDescriptions.Clear());
+
             app.UseStaticFiles();
 
             // Add MVC to the request pipeline.
